@@ -14,17 +14,10 @@
 
   <author email="jperron@sfu.ca">Jacob Perron</author>
 
-  <buildtool_depend>cmake</buildtool_depend>
+  <buildtool_depend>catkin</buildtool_depend>
 
   <depend>boost</depend>
 
-  <exec_depend>catkin</exec_depend>
-
-  <doc_depend>doxygen</doc_depend>
-
-  <test_depend>gtest</test_depend>
-
   <export>
-    <build_type>cmake</build_type>
   </export>
 </package>

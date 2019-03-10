@@ -36,6 +36,7 @@ POSSIBILITY OF SUCH DAMAGE.
 #define CREATE_SERIAL_H
 
 #include <boost/asio.hpp>
+#include <boost/enable_shared_from_this.hpp>
 #include <boost/thread.hpp>
 #include <boost/thread/condition_variable.hpp>
 #include <boost/function.hpp>
@@ -46,7 +47,7 @@ POSSIBILITY OF SUCH DAMAGE.
 #include "create/util.h"
 
 namespace create {
-  class Serial {
+  class Serial : public boost::enable_shared_from_this<Serial> {
 
     protected:
       boost::asio::io_service io;
